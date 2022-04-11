@@ -192,6 +192,69 @@
   letter-spacing: 0.03em;
   color: #4f4f4f;
 }
+.section3_case{
+    display: flex;
+    margin: 50px auto;
+    width: 850px;
+    /* border: 1px solid red; */
+}
+.section3_caseA{
+    margin: 0 auto;
+}
+.section3_case_img{
+    text-align: center;
+}
+.section3_case_title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #828282;
+  margin: 20px;
+}
+.section3_caseA_list {
+  width: 380px;
+}
+.section3_caseA_li {
+  margin-bottom: 10px;
+  height: 90px;
+  background-color: #fffae2;
+  border: 2px solid #4f4f4f;
+  box-sizing: border-box;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section3_caseA_num {
+  background-color: #ffd02b;
+  width: 70px;
+  height: 70px;
+  border: 2px solid #4f4f4f;
+  box-sizing: border-box;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  /* margin-left: 10px; */
+}
+.section3_caseB_num {
+    background-color: #50B8B2;
+}
+.section3_caseA_txt{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+    width: 270px;
+    color: #4F4F4F;
+}
 /* ============  section3  end ============ */
 /* ============  section4 ============ */
 /* ============  section4  end ============ */
