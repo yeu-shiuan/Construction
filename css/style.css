@@ -1,0 +1,201 @@
+@import "./common/header.css";
+@import "./common/footer.css";
+
+.test {
+  color: rgba(1, 100, 55, 1);
+  color: rgba(255, 208, 43, 1);
+  color: rgba(80, 184, 178, 1);
+  color: rgba(255, 250, 226, 1);
+}
+/* Auto layout */
+.qw {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: absolute;
+  width: 840px;
+  height: 180px;
+  left: 300px;
+  top: 1227px;
+}
+
+/* ============  section0  ============ */
+
+.section0_content_1 {
+  position: absolute;
+  width: 532px;
+  height: 278px;
+  right: 120px;
+  top: 220px;
+}
+.section0_content_2 {
+  position: absolute;
+  width: 600px;
+  height: 278px;
+  right: 52px;
+  top: 315px;
+}
+.section0_text_bg_1 {
+  background: #fffae2;
+  width: 400px;
+  height: 60px;
+}
+.section0_text_bg_2 {
+  background: #fffae2;
+  width: 600px;
+  height: 60px;
+}
+.section0_banner img {
+  width: 100%;
+}
+.section0_text {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 93px;
+  letter-spacing: 0.3rem;
+  color: #4f4f4f;
+  position: absolute;
+  top: -30px;
+  left: 28px;
+  text-shadow: -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff,
+    3px 3px 0 #fff;
+}
+/* ============  section0  end ============ */
+/* ============  section1 ============ */
+.section1 {
+  margin-bottom: 100px;
+}
+.section1_pic_all {
+  margin: 50px auto 0px;
+}
+.section1_pic {
+  display: flex;
+  margin: 0 auto;
+  width: 1050px;
+  justify-content: space-evenly;
+}
+.section1_img1_all {
+  position: relative;
+  width: 310px;
+}
+.section1_img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 7px solid #50b8b2;
+  margin: 0 auto;
+}
+.section1_img1 {
+  background-image: url(../img/pic-1.png);
+}
+.section1_img2 {
+  background-image: url(../img/pic-2.png);
+}
+.section1_img3 {
+  background-image: url(../img/pic-3.png);
+  background-size: 200%;
+}
+.section1_img_text_bg {
+  width: 310px;
+  height: 60px;
+  background: #50b8b2;
+  border-radius: 50px;
+  position: absolute;
+  top: 160px;
+}
+.section1_img_text {
+  font-size: 18px;
+  width: 310px;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+}
+/* ============  section1  end ============ */
+/* ============  section2 ============ */
+.section2 {
+  width: 1440px;
+  height: 840px;
+  border: 1px solid orange;
+  background-image: url(../img/pic-3.png);
+  background-repeat: no-repeat;
+}
+/* ============  section2  end ============ */
+/* ============  section3 ============ */
+.section3_box_all {
+  margin: 0 auto;
+}
+.section3_box1 {
+  width: 782px;
+  height: 450px;
+  background-color: #fffae2;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  margin: 30px auto;
+}
+.section3_box2 {
+  height: 100%;
+}
+.section3_box_link_all {
+  width: 782px;
+  position: relative;
+  margin: 0 auto;
+}
+.section3_box_link {
+  position: absolute;
+  width: 15px;
+  height: 74px;
+  left: 55px;
+  top: -53px;
+  background: #c4c4c4;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+.section3_box_link2 {
+  left: 710px;
+}
+.section3_box_title_bg {
+  width: 670px;
+  height: 70px;
+  line-height: 70px;
+  background: #ffd02b;
+  border-radius: 50px;
+  margin: 26px auto;
+}
+.section3_box_title {
+  font-weight: 700;
+  font-size: 24px;
+
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #4f4f4f;
+}
+.section3_box_img {
+  text-align: center;
+  padding-top: 15px;
+}
+.section3_box2_content {
+  width: 670px;
+  margin: 10px auto 20px;
+  text-align: justify;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.03em;
+  color: #4f4f4f;
+}
+/* ============  section3  end ============ */
+/* ============  section4 ============ */
+/* ============  section4  end ============ */
+/* ============  section5 ============ */
+/* ============  section5  end ============ */
+/* ============  section6 ============ */
+/* ============  section6  end ============ */
