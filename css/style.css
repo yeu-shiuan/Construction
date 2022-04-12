@@ -162,7 +162,7 @@
 .section3_box_link2 {
   left: 710px;
 }
-.section3_box_title_bg {
+.section_box_title_bg {
   width: 670px;
   height: 70px;
   line-height: 70px;
@@ -170,7 +170,7 @@
   border-radius: 50px;
   margin: 26px auto;
 }
-.section3_box_title {
+.section_box_title {
   font-weight: 700;
   font-size: 24px;
 
@@ -192,17 +192,17 @@
   letter-spacing: 0.03em;
   color: #4f4f4f;
 }
-.section3_case{
-    display: flex;
-    margin: 50px auto;
-    width: 850px;
-    /* border: 1px solid red; */
+.section3_case {
+  display: flex;
+  margin: 50px auto;
+  width: 850px;
+  /* border: 1px solid red; */
 }
-.section3_caseA{
-    margin: 0 auto;
+.section3_caseA {
+  margin: 0 auto;
 }
-.section3_case_img{
-    text-align: center;
+.section3_case_img {
+  text-align: center;
 }
 .section3_case_title {
   font-weight: 700;
@@ -246,17 +246,79 @@
   /* margin-left: 10px; */
 }
 .section3_caseB_num {
-    background-color: #50B8B2;
+  background-color: #50b8b2;
 }
-.section3_caseA_txt{
-    margin-left: 10px;
-    margin-right: 10px;
-    font-size: 18px;
-    width: 270px;
-    color: #4F4F4F;
+.section3_caseA_txt {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 18px;
+  width: 270px;
+  color: #4f4f4f;
 }
 /* ============  section3  end ============ */
 /* ============  section4 ============ */
+.section4 {
+  height: 2800px;
+}
+.section4_bg {
+  background: #fffae2;
+  width: 100%;
+  padding: 0.1px;
+}
+.section4_content {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  color: #4f4f4f;
+}
+.section4_content_bold {
+  font-weight: 500;
+  line-height: 73px;
+}
+.section4_box0 {
+  margin: 20px auto;
+  display: flex;
+  width: 782px;
+  height: 77px;
+  background: #ffffff;
+  border: 2px solid #4f4f4f;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+.section4_box0_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 18px 0 24px;
+}
+.section4_box1 {
+  width: 782px;
+  height: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+.section4_box1_all{
+    position: relative;
+}
+.section4_box1_mark{
+    position: absolute;
+    top: -36px;
+    left: 27px;
+    /* border: 1px solid red; */
+}
+.section4_box1_mark_num{
+    font-size: 24px;
+    color: #fff;
+    position: absolute;
+    top:17px;
+    left: 22px;
+}
 /* ============  section4  end ============ */
 /* ============  section5 ============ */
 /* ============  section5  end ============ */
