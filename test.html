@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .augurio-collapse .title-box,
+        .augurio-collapse .contents-box {
+            border: 1px solid #CCC;
+        }
+        .title-box{
+            border-radius: 50px;
+        }
+        .augurio-collapse .title-box,
+        .augurio-collapse .contents {
+            padding: 12px;
+        }
+        .contents-box{
+            transform: translateY(-17px);
+            border-radius: 0px 0px 50px 50px;
+        }
+        .augurio-collapse .title-box {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .augurio-collapse .title-box.active .icons span:first-of-type {
+            transform: rotate(180deg);
+        }
+
+        .augurio-collapse .title-box.active .icons span:last-of-type {
+            transform: rotate(0) translateY(-2px);
+        }
+
+        .augurio-collapse .icons {
+            position: absolute;
+            right: 12px;
+        }
+
+        .augurio-collapse .icons span {
+            display: block;
+            width: 12px;
+            height: 2px;
+            background-color: #000;
+            transition: transform .2s ease;
+        }
+
+        .augurio-collapse .icons span:last-of-type {
+            transform: rotate(90deg) translateX(-2px);
+        }
+
+        .augurio-collapse .contents-box {
+            overflow: hidden;
+            border-top: none;
+            border-bottom: none;
+            transition: height .3s ease;
+        }
+
+        .augurio-collapse .collapse:last-of-type .contents-box {
+            border-bottom: 1px solid #CCC;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 最外層包一個 div，為了不跟裡面 div 混淆這邊用 section -->
+    <section class="augurio-collapse">
+
+        <!-- 一個 .collapse 是一組-->
+        <div class="collapse">
+
+            <!-- title，，加入 data-expanded="true"，預設就會開啟 -->
+            <div class="title-box" data-expanded="true">
+                <div class="title">collapse-title-1</div>
+                <div class="icons"><span></span><span></span></div>
+            </div>
+
+            <!-- contents-->
+            <div class="contents-box">
+                <div class="contents">
+                    <p>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ducimus, illum vitae nam
+                        officia quidem iste maxime provident! Temporibus repellat nulla blanditiis at accusamus minima
+                        delectus aut doloribus officia deserunt.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="collapse">
+
+            <!-- title，，加入 data-expanded="true"，預設就會開啟 -->
+            <div class="title-box" data-expanded="true">
+                <div class="title">collapse-title-1</div>
+                <div class="icons"><span></span><span></span></div>
+            </div>
+
+            <!-- contents-->
+            <div class="contents-box">
+                <div class="contents">
+                    <p>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ducimus, illum vitae nam
+                        officia quidem iste maxime provident! Temporibus repellat nulla blanditiis at accusamus minima
+                        delectus aut doloribus officia deserunt.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="collapse">
+
+            <!-- title，，加入 data-expanded="true"，預設就會開啟 -->
+            <div class="title-box" data-expanded="true">
+                <div class="title">collapse-title-1</div>
+                <div class="icons"><span></span><span></span></div>
+            </div>
+
+            <!-- contents-->
+            <div class="contents-box">
+                <div class="contents" style="background-color: #CCC;">
+                    <p>
+                        <br>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ducimus, illum vitae nam
+                        officia quidem iste maxime provident! Temporibus repellat nulla blanditiis at accusamus minima
+                        delectus aut doloribus officia deserunt.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ducimus, illum vitae nam
+                        officia quidem iste maxime provident! Temporibus repellat nulla blanditiis at accusamus minima
+                        delectus aut doloribus officia deserunt.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ducimus, illum vitae nam
+                        officia quidem iste maxime provident! Temporibus repellat nulla blanditiis at accusamus minima
+                        delectus aut doloribus officia deserunt.</po>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+
+            // 寫入各 .content-box 的高，然後高度設成 0
+            const contents = document.querySelectorAll('.augurio-collapse .contents-box');
+            Array.prototype.forEach.call(contents, c => {
+                c.dataset.height = c.offsetHeight;
+                c.setAttribute('style', 'height: 0');
+            });
+
+            // .title-box 被點擊時，加入 .active， .content-box的高度抓 data-height 的
+            const titles = document.querySelectorAll('.title-box');
+            Array.prototype.forEach.call(titles, t => {
+                t.addEventListener('click', e => {
+
+                    // 如果需要開啟一個就關閉前一個，就加入以下：
+                    const active = document.querySelectorAll('.active');
+                    Array.prototype.forEach.call(active, act => {
+                        act.classList.remove('active');
+                        act.parentNode.querySelector('.contents-box').setAttribute('style', 'height: 0');
+                    })
+
+
+                    e.target.classList.toggle('active'); // 加入/移除 .active
+
+                    // .title-box 同一層的 .contents-box
+                    const content = e.target.parentNode.querySelector('.contents-box');
+                    const height = content.dataset.height; // 從 dat-height 抓原本高度
+
+                    // 判斷 .title-box 有沒有 .active
+                    if (e.target.classList.contains('active')) {
+                        // 有 .active，就設高
+                        content.setAttribute('style', 'height: ' + height + 'px');
+                    } else {
+                        // 沒有，高度歸 0
+                        content.setAttribute('style', 'height: 0');
+                    }
+                });
+
+                // 如果 .title-box 有 data-expanded="true"，就預設開啟
+                if (t.dataset.expanded === 'true') {
+                    t.click()
+                }
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>

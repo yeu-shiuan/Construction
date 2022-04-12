@@ -1,7 +1,6 @@
 @import "./common/header.css";
 @import "./common/footer.css";
 
-
 .test {
   color: rgba(1, 100, 55, 1);
   color: rgba(255, 208, 43, 1);
@@ -388,10 +387,10 @@
   /* width: 90%; */
   /* width: 670px; */
 }
-.section4_box3_content_title{
-    padding: 20px 10px;
-    text-align: justify;
-    /* margin:  auto 10px; */
+.section4_box3_content_title {
+  padding: 20px 10px;
+  text-align: justify;
+  /* margin:  auto 10px; */
 }
 .section4_box3_content_bg {
   width: 340px;
@@ -404,10 +403,46 @@
   width: 88%;
 }
 .section4_box3_content_li {
-    background-color: #F2994A;
-  }
+  background-color: #f2994a;
+}
 /* ============  section4  end ============ */
 /* ============  section5 ============ */
 /* ============  section5  end ============ */
 /* ============  section6 ============ */
+.section6{
+    display: none;
+}
+.section6_box {
+  width: 360px;
+  /* margin: 0 auto; */
+  background: #ffffff;
+  border: 2px solid #4f4f4f;
+  border-radius: 20px;
+  position: relative;
+}
+.section6_box_btn{
+    /* margin: 10px 10px 0px; */
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.section6_box_content_all{
+
+}
+.section6_box_content{
+    width: 200px;
+    margin: 30px auto 0px;
+}
+.section6_div_bg {
+  width: 200px;
+  padding: 15px 33px;
+  background: #ffddbe;
+  border-radius: 20px;
+  text-align: center;
+}
+.section6_div_tel{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 /* ============  section6  end ============ */
