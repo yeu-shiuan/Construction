@@ -1,6 +1,7 @@
 @import "./common/header.css";
 @import "./common/footer.css";
 
+
 .test {
   color: rgba(1, 100, 55, 1);
   color: rgba(255, 208, 43, 1);
@@ -55,8 +56,6 @@
   font-style: normal;
   font-size: 64px;
   line-height: 93px;
-  letter-spacing: 0.3rem;
-  color: #4f4f4f;
   position: absolute;
   top: -30px;
   left: 28px;
@@ -119,9 +118,7 @@
 /* ============  section1  end ============ */
 /* ============  section2 ============ */
 .section2 {
-  width: 1440px;
-  height: 840px;
-  border: 1px solid orange;
+  height: 800px;
   background-image: url(../img/pic-3.png);
   background-repeat: no-repeat;
 }
@@ -173,10 +170,8 @@
 .section_box_title {
   font-weight: 700;
   font-size: 24px;
-
   text-align: center;
   letter-spacing: 0.05em;
-  color: #4f4f4f;
 }
 .section3_box_img {
   text-align: center;
@@ -189,8 +184,6 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
-  letter-spacing: 0.03em;
-  color: #4f4f4f;
 }
 .section3_case {
   display: flex;
@@ -253,12 +246,11 @@
   margin-right: 10px;
   font-size: 18px;
   width: 270px;
-  color: #4f4f4f;
 }
 /* ============  section3  end ============ */
 /* ============  section4 ============ */
 .section4 {
-  height: 2800px;
+  height: 2940px;
 }
 .section4_bg {
   background: #fffae2;
@@ -269,8 +261,8 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 35px;
-  text-align: center;
-  color: #4f4f4f;
+  margin: 0 auto;
+  width: 778px;
 }
 .section4_content_bold {
   font-weight: 500;
@@ -295,30 +287,125 @@
 }
 .section4_box1 {
   width: 782px;
-  height: 800px;
-  margin: 0 auto;
+  height: 850px;
+  margin: 0 auto 20px;
   background: #ffffff;
-  border: 2px solid #000000;
+  border: 2px solid #4f4f4f;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
 }
-.section4_box1_all{
-    position: relative;
+.section4_box2 {
+  height: 520px;
 }
-.section4_box1_mark{
-    position: absolute;
-    top: -36px;
-    left: 27px;
-    /* border: 1px solid red; */
+.section4_box3 {
+  height: 1100px;
 }
-.section4_box1_mark_num{
-    font-size: 24px;
-    color: #fff;
-    position: absolute;
-    top:17px;
-    left: 22px;
+.section4_box1_all {
+  position: relative;
 }
+.section4_box1_mark {
+  position: absolute;
+  top: -36px;
+  left: 27px;
+  /* border: 1px solid red; */
+}
+.section4_box1_mark_num {
+  font-size: 24px;
+  color: #fff;
+  position: absolute;
+  top: 17px;
+  left: 22px;
+}
+.section4_box1_content {
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: justify;
+  width: 600px;
+  font-weight: 400;
+  line-height: 23px;
+}
+.section4_box1_content span {
+  font-weight: 500;
+}
+.section4_box1_img {
+  text-align: center;
+  margin: 27px 0 19px;
+}
+.section4_box_content {
+  font-size: 18px;
+  margin: 0 auto;
+  width: 700px;
+}
+.section4_box2_content_title {
+  margin-bottom: 10px;
+}
+.section4_box2_content_ul {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+.section4_box2_content_li {
+  background-color: #50b8b2;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+.section4_box2_content_li span {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  line-height: 30px;
+}
+.section4_box2_content_li_txt {
+  line-height: 30px;
+  width: 93%;
+}
+.section4_box3_all {
+  display: flex;
+  justify-content: space-between;
+}
+.section4_img1 {
+  background-image: url("../img/pic-6.png");
+  border: 5px solid #ffd02b;
+  width: 190px;
+  height: 190px;
+}
+.section4_img2 {
+  background-image: url("../img/pic-7.png");
+}
+.section4_box3_both_title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 8px auto;
+}
+.section4_box3_content {
+  font-size: 18px;
+  margin: 0 auto;
+  /* width: 90%; */
+  /* width: 670px; */
+}
+.section4_box3_content_title{
+    padding: 20px 10px;
+    text-align: justify;
+    /* margin:  auto 10px; */
+}
+.section4_box3_content_bg {
+  width: 340px;
+  height: 660px;
+  background: #ffddbe;
+  border-radius: 30px;
+}
+.section4_box3_content_li_txt {
+  line-height: 30px;
+  width: 88%;
+}
+.section4_box3_content_li {
+    background-color: #F2994A;
+  }
 /* ============  section4  end ============ */
 /* ============  section5 ============ */
 /* ============  section5  end ============ */
