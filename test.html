@@ -7,27 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .collapse {
+            margin-top: 10px;
+        }
+
         .augurio-collapse .title-box,
         .augurio-collapse .contents-box {
-            border: 1px solid #CCC;
+            border: 2px solid #CCC;
         }
-        .title-box{
+
+        .title-box {
             border-radius: 50px;
+            background-color: white;
         }
+
         .augurio-collapse .title-box,
         .augurio-collapse .contents {
             padding: 12px;
         }
-        .contents-box{
+
+        .contents-box {
             transform: translateY(-17px);
             border-radius: 0px 0px 50px 50px;
+            position: relative;
+            border-bottom: 2px solid #CCC;
+            /* z-index: 1; */
         }
+
         .augurio-collapse .title-box {
             position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
             cursor: pointer;
+            z-index: 10;
         }
 
         .augurio-collapse .title-box.active .icons span:first-of-type {
@@ -60,10 +73,13 @@
             border-top: none;
             border-bottom: none;
             transition: height .3s ease;
+            background-color: #FFD02B;
         }
 
         .augurio-collapse .collapse:last-of-type .contents-box {
-            border-bottom: 1px solid #CCC;
+            border: 2px solid #CCC;
+            position: relative;
+            z-index: 1;
         }
     </style>
 </head>
@@ -77,7 +93,7 @@
 
             <!-- title，，加入 data-expanded="true"，預設就會開啟 -->
             <div class="title-box" data-expanded="true">
-                <div class="title">collapse-title-1</div>
+                <div class="title">私有建築物耐震階段性補強之補強標準為何?</div>
                 <div class="icons"><span></span><span></span></div>
             </div>
 
@@ -85,10 +101,9 @@
             <div class="contents-box">
                 <div class="contents">
                     <p>
-                        <br>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ducimus, illum vitae nam
-                        officia quidem iste maxime provident! Temporibus repellat nulla blanditiis at accusamus minima
-                        delectus aut doloribus officia deserunt.</p>
+                        耐震階段性補強以其補強標準分為耐震階段性補強A及耐震階段性補強B，其補強目標如下:
+                        耐震階段性補強A：為降低補強目標層以下，各層發生軟弱層集中式破壞的風險。
+                        耐震階段性補強B：補強後之整幢(棟)結構在結構分析過程中選取的性能點，不會有任一垂直承載構件發生軸向破壞或完全喪失側向強度之虞。</p>
                 </div>
             </div>
 
@@ -103,12 +118,13 @@
 
             <!-- contents-->
             <div class="contents-box">
-                <div class="contents">
+                <div class="contents" style="background-color: red;">
                     <p>
                         <br>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ducimus, illum vitae nam
                         officia quidem iste maxime provident! Temporibus repellat nulla blanditiis at accusamus minima
-                        delectus aut doloribus officia deserunt.</p>
+                        delectus aut doloribus officia deserunt.
+                    </p>
                 </div>
             </div>
 
@@ -117,15 +133,14 @@
 
             <!-- title，，加入 data-expanded="true"，預設就會開啟 -->
             <div class="title-box" data-expanded="true">
-                <div class="title">collapse-title-1</div>
+                <div class="title">collapse-title-3</div>
                 <div class="icons"><span></span><span></span></div>
             </div>
 
             <!-- contents-->
             <div class="contents-box">
-                <div class="contents" style="background-color: #CCC;">
+                <div class="contents">
                     <p>
-                        <br>
                         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ducimus, illum vitae nam
                         officia quidem iste maxime provident! Temporibus repellat nulla blanditiis at accusamus minima
                         delectus aut doloribus officia deserunt.
@@ -139,7 +154,31 @@
             </div>
 
         </div>
+        <div class="collapse">
 
+            <!-- title，，加入 data-expanded="true"，預設就會開啟 -->
+            <div class="title-box" data-expanded="true">
+                <div class="title">collapse-title-3</div>
+                <div class="icons"><span></span><span></span></div>
+            </div>
+
+            <!-- contents-->
+            <div class="contents-box">
+                <div class="contents">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ducimus, illum vitae nam
+                        officia quidem iste maxime provident! Temporibus repellat nulla blanditiis at accusamus minima
+                        delectus aut doloribus officia deserunt.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ducimus, illum vitae nam
+                        officia quidem iste maxime provident! Temporibus repellat nulla blanditiis at accusamus minima
+                        delectus aut doloribus officia deserunt.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ducimus, illum vitae nam
+                        officia quidem iste maxime provident! Temporibus repellat nulla blanditiis at accusamus minima
+                        delectus aut doloribus officia deserunt.</po>
+                </div>
+            </div>
+
+        </div>
     </section>
     <script>
         window.addEventListener('DOMContentLoaded', () => {
