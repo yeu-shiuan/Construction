@@ -6,7 +6,7 @@
 }
 body {
   margin: 0 auto;
-  color: #4F4F4F;
+  color: #4f4f4f;
 }
 header {
   width: 100%;
@@ -24,9 +24,9 @@ h1 {
   margin-top: 50px;
   margin-bottom: 30px;
 }
-a{
-    text-decoration:none;
-    color: #fff;
+a {
+  text-decoration: none;
+  color: #fff;
 }
 .content {
   width: 1050px;
@@ -38,8 +38,8 @@ a{
   margin: 0 auto;
 }
 /* ================  nav_top   =============== */
-.nav_top{
-    height: 100px;
+.nav_top {
+  height: 100px;
 }
 .nav_top_all {
   display: flex;
@@ -57,33 +57,31 @@ a{
 .nav_top_title {
   padding-left: 42px;
   padding-right: 42px;
+  cursor: pointer;
 }
 .nav_top_title1 {
+  border-bottom: 3px solid rgba(255, 208, 43, 1);
+}
+.nav_top_title span:hover {
   border-bottom: 3px solid rgba(255, 208, 43, 1);
 }
 /* ================  nav_top   =============== */
 /* ================  nav_right   =============== */
 .nav_right {
-  /* border: 1px solid red; */
-  position:sticky;
+  position: sticky;
   top: 0;
-  /* right: 0; */
-  /* height: 100vh; */
-  /* display: f; */
 }
 .nav_right_all {
-    position: sticky;
-    right: 0;
-    top: 100px;
+  position: sticky;
+  right: 0;
+  top: 100px;
 }
-.nav_right_all_all{
-    position: absolute;
-    right: 0;
-    top: 0;
-    /* width: 50px; */
-    /* border: 1px solid black; */
-    background-color: #f2f2f2;
-    height: 100vh;
+.nav_right_all_all {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f2f2f2;
+  height: 100vh;
 }
 .nav_right_title {
   position: relative;
@@ -91,7 +89,7 @@ a{
 .nav_right_bg_1 {
   position: relative;
   width: 50px;
-    /* display: none; */
+  display: none;
 }
 .nav_right_bg {
   /* background-image: url("../../img/mark-1.svg");
@@ -103,15 +101,15 @@ a{
   /* display: none; */
 }
 .nav_right_text {
-    position: absolute;
-    left: -100px;
-    font-size: 18px;
-    /* width: 500px; */
-    line-height: 50px;
-    color: #fff;
+  position: absolute;
+  left: -100px;
+  font-size: 18px;
+  /* width: 500px; */
+  line-height: 50px;
+  color: #fff;
 }
 .nav_right_img {
-  padding: 5px;
+  /* padding: 5px; */
   border-bottom: 1px solid gray;
   width: 50px;
   height: 50px;
@@ -119,23 +117,38 @@ a{
   align-items: center;
   justify-content: center;
 }
-.nav_right_img1{
-    border-top: 1px solid gray;
-  }
+.nav_right_img:hover {
+  background-color: #ffd02b;
+}
+.img-box {
+  overflow: hidden;
+}
+.img-box:hover .svg {
+  width: 35px;
+  transform: translateX(-45px);
+}
+.svg {
+  width: 35px;
+  filter: drop-shadow(45px 0 #016437);
+}
+.nav_right_img1 {
+  border-top: 1px solid gray;
+}
 .nav_right_img img {
   width: 35px;
 }
+
 .main_div {
-    width: calc(100% - 50px);
-    display: inline-block;
+  width: calc(100% - 50px);
+  display: inline-block;
 }
 
 aside.right_aside {
-    width: 50px;
-    display: inline-block;
+  width: 50px;
+  display: inline-block;
 }
 
 div.flex_div {
-    display: flex;
+  display: flex;
 }
 /* ================  nav_right   =============== */

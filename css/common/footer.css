@@ -48,6 +48,7 @@
   color: #4f4f4f;
   text-align: center;
   line-height: 35px;
+  cursor: pointer;
 }
 .footer_c {
     position: relative;
