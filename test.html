@@ -25,7 +25,6 @@
         .augurio-collapse .title-box,
         .augurio-collapse .contents {
             padding: 12px;
-            border-bottom: 2px solid #4F4F4F;
         }
 
         .contents-box {
@@ -73,7 +72,6 @@
         .augurio-collapse .contents-box {
             overflow: hidden;
             border-top: none;
-            border-bottom: none;
             transition: height .3s ease;
             background-color: #FFD02B;
         }
@@ -103,9 +101,9 @@
             <div class="contents-box">
                 <div class="contents">
                     <p>
-                        耐震階段性補強以其補強標準分為耐震階段性補強A及耐震階段性補強B，其補強目標如下:
-                        耐震階段性補強A：為降低補強目標層以下，各層發生軟弱層集中式破壞的風險。
-                        耐震階段性補強B：補強後之整幢(棟)結構在結構分析過程中選取的性能點，不會有任一垂直承載構件發生軸向破壞或完全喪失側向強度之虞。</p>
+                        耐震階段性補強以其補強標準分為耐震階段性補強A及耐震階段性補強B，其補強目標如下:<br>
+                        1. 耐震階段性補強A：為降低補強目標層以下，各層發生軟弱層集中式破壞的風險。<br>
+                        2. 耐震階段性補強B：補強後之整幢(棟)結構在結構分析過程中選取的性能點，不會有任一垂直承載構件發生軸向破壞或完全喪失側向強度之虞。</p>
                 </div>
             </div>
 
@@ -113,8 +111,8 @@
         <div class="collapse">
 
             <!-- title，，加入 data-expanded="true"，預設就會開啟 -->
-            <div class="title-box" data-expanded="true">
-                <div class="title">collapse-title-1</div>
+            <div class="title-box">
+                <div class="title">申請私有建築物耐震階段性補強補助時何種情形不予補助</div>
                 <div class="icons"><span></span><span></span></div>
             </div>
 
@@ -122,9 +120,13 @@
             <div class="contents-box">
                 <div class="contents">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ducimus, illum vitae nam
-                        officia quidem iste maxime provident! Temporibus repellat nulla blanditiis at accusamus minima
-                        delectus aut doloribus officia deserunt.
+                        1. 欲辦理重建並已申請建造執照。<br>
+                        2. 住宅使用之比率未達二分之一之建築物。<br>
+                        3. 建築物為單一所有權人。<br>
+                        4. 公有建築物。<br>
+                        5. 經專業鑑定機構鑑定須拆除之高氯離子鋼筋混凝土建築物。<br>
+                        6. 申請結構補強已獲政府機關補助。<br>
+                        7. 經執行機關認定補強不具效益。
                     </p>
                 </div>
             </div>
@@ -133,8 +135,8 @@
         <div class="collapse">
 
             <!-- title，，加入 data-expanded="true"，預設就會開啟 -->
-            <div class="title-box" data-expanded="true">
-                <div class="title">collapse-title-3</div>
+            <div class="title-box">
+                <div class="title">辦理私有建築耐震階段性補強之施工廠商資格為何</div>
                 <div class="icons"><span></span><span></span></div>
             </div>
 
@@ -158,7 +160,7 @@
         <div class="collapse">
 
             <!-- title，，加入 data-expanded="true"，預設就會開啟 -->
-            <div class="title-box" data-expanded="true">
+            <div class="title-box">
                 <div class="title">collapse-title-3</div>
                 <div class="icons"><span></span><span></span></div>
             </div>
@@ -213,7 +215,7 @@
                     // 判斷 .title-box 有沒有 .active
                     if (e.target.classList.contains('active')) {
                         // 有 .active，就設高
-                        content.setAttribute('style', 'height: ' + height + 'px');
+                        content.setAttribute('style', 'height: ' + height + 'px ; margin-bottom: -20px;');
                     } else {
                         // 沒有，高度歸 0
                         content.setAttribute('style', 'height: 0');
@@ -231,14 +233,14 @@
         window.addEventListener('resize', () => {
             const contents = document.querySelectorAll('.augurio-collapse .contents-box');
             Array.prototype.forEach.call(contents, c => {
-                c.setAttribute('style', 'height: auto');
+                c.setAttribute('style', 'height: auto; margin-bottom: -20px;');
                 c.dataset.height = c.offsetHeight;
                 c.setAttribute('style', 'height: 0');
             });
             const titles = document.querySelectorAll('.title-box');
-            Array.prototype.forEach.call(titles, t => {
-                if (t.dataset.expanded === 'true') {
-                    t.click()
+            Array.prototype.forEach.call(titles, (t, i) => {
+                if (t.classList.contains('active')) {
+                    contents[i].setAttribute('style', 'height: auto ; margin-bottom: -20px;');
                 }
 
 
