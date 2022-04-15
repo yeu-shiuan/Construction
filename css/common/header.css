@@ -29,7 +29,7 @@ a {
   color: #fff;
 }
 .content {
-  width: 1050px;
+  width: 75%;
   font-weight: 500;
   font-size: 24px;
   line-height: 35px;
@@ -37,7 +37,14 @@ a {
   letter-spacing: 0.05em;
   margin: 0 auto;
 }
+
 /* ================  nav_top   =============== */
+.ham {
+  display: none;
+}
+#nav-toggle {
+  display: none;
+}
 .nav_top {
   height: 100px;
 }
@@ -45,10 +52,14 @@ a {
   display: flex;
 }
 .nav_top_logo {
-  padding: 22.5px 40px;
+  padding: 26px 40px 14px;
+}
+.nav_top_logo a {
+  height: 100%;
 }
 .nav_top_title_all {
   display: flex;
+  align-items: center;
   font-size: 24px;
   line-height: 100px;
   height: 100px;
@@ -89,6 +100,7 @@ a {
 .nav_right_bg_1 {
   position: relative;
   width: 50px;
+  z-index: 20;
   display: none;
 }
 .nav_right_bg {
@@ -146,9 +158,251 @@ a {
 aside.right_aside {
   width: 50px;
   display: inline-block;
+  z-index: 20;
 }
 
 div.flex_div {
   display: flex;
 }
 /* ================  nav_right   =============== */
+
+/* ============  rwd   ============ */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .nav_top_title {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .content {
+    width: 70%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .nav_top_title_all {
+    margin-left: 5%;
+  }
+  .nav_top_title {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  .nav_top_logo {
+    padding: 26px 20px 14px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header{
+    height: 75px;
+  }
+  .nav_top {
+    height: 75px;
+  }
+  .nav_top_all{
+    height: 75px;
+  }
+  .nav_top_logo {
+    padding: 20px 20px 0px;
+  }
+  .nav_top_logo img {
+    height: 50px;
+  }
+  .nav_top_title_all {
+    margin-left: 5%;
+    height: 75px;
+  }
+  .nav_top_title {
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* 漢堡選單樣式 */
+  .ham {
+    width: 75px;
+    height: 75px;
+    /* border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3); */
+    display: block;
+    position: relative;
+  }
+  .ham-origin {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+  }
+  .ham-bar {
+    height: 5px;
+    width: 40px;
+    position: absolute;
+    background: #4F4F4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    /* margin: -1px 0 0 -13px; */
+    transition: all 0.5s;
+    border-radius: 30px;
+  }
+  .ham-bar--top {
+    transform: translateY(-14px);
+  }
+  .ham-bar--bottom {
+    transform: translateY(14px);
+  }
+  #nav-toggle:checked ~ .ham .ham-bar--middle {
+    opacity: 0;
+  }
+
+  #nav-toggle:checked ~ .ham .ham-bar--top {
+    transform: rotate(-45deg);
+  }
+
+  #nav-toggle:checked ~ .ham .ham-bar--bottom {
+    transform: rotate(45deg);
+  }
+  #nav-toggle:checked ~ .ham .ham-bar--middle {
+    opacity: 0;
+  }
+  #nav-toggle:checked ~ .nav_top_title_all {
+    transform: none;
+  }
+  .nav_top_title_all {
+    display: block;
+    height: 100%;
+    background-color: #016437;
+    color: #fff;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 75px;
+    bottom: 0;
+    /* 用 translate 把選單藏到畫面右邊去 */
+    transform: translateX(100%);
+    transition: transform 0.5s;
+  }
+  header{
+    height: 75px;
+  }
+  .nav_top {
+    height: 70px;
+    position: relative;
+    top: 0;
+  }
+  .nav_top_logo {
+    padding: 20px 20px 0px;
+  }
+  .nav_top_logo img {
+    height: 50px;
+  }
+  .nav_top_all {
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+  }
+  aside{
+    display: none;
+  }
+  .nav_right{
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  /* 漢堡選單樣式 */
+  .ham {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: relative;
+  }
+  .ham-origin {
+    position: absolute;
+    top: 66%;
+    left: 10%;
+  }
+  .ham-bar {
+    height: 3px;
+    width: 21px;
+    position: absolute;
+    background: #4F4F4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: all 0.5s;
+    border-radius: 30px;
+  }
+  .ham-bar--top {
+    transform: translateY(-7px);
+  }
+  .ham-bar--bottom {
+    transform: translateY(7px);
+  }
+  #nav-toggle:checked ~ .ham .ham-bar--middle {
+    opacity: 0;
+  }
+
+  #nav-toggle:checked ~ .ham .ham-bar--top {
+    transform: rotate(-45deg);
+  }
+
+  #nav-toggle:checked ~ .ham .ham-bar--bottom {
+    transform: rotate(45deg);
+  }
+  #nav-toggle:checked ~ .ham .ham-bar--middle {
+    opacity: 0;
+  }
+  #nav-toggle:checked ~ .nav_top_title_all {
+    transform: none;
+  }
+  .nav_top_title_all {
+    display: block;
+    height: 100%;
+    background-color: #016437;
+    color: #fff;
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    top: 42px;
+    bottom: 0;
+    /* 用 translate 把選單藏到畫面右邊去 */
+    transform: translateX(100%);
+    transition: transform 0.5s;
+  }
+  header{
+    height: 42px;
+  }
+  .nav_top {
+    height: 42px;
+    position: relative;
+    top: 0;
+  }
+  .nav_top_logo {
+    padding: 7px 10px 0px;
+  }
+  .nav_top_logo img {
+    height: 30px;
+  }
+  .nav_top_all {
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+  }
+  .nav_top_title {
+    padding: 0px 10px;
+    height: 30px;
+  }
+  .nav_top_title span{
+    /* padding: 10px 0 0px; */
+    /* display: block; */
+    /* margin-top: 10px; */
+    font-size: 20px;
+    /* height: 30px; */
+  }
+  aside{
+    display: none;
+  }
+  .nav_right{
+    display: none;
+  }
+}

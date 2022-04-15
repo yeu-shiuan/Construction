@@ -10,11 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .footer_link1 {
-            color: white !important;
-        }
-    </style>
 </head>
 
 <body>
@@ -24,6 +19,15 @@
                 <div class="nav_top_logo">
                     <a href="index.html"><img src="./img/logo-1.svg"></a>
                 </div>
+                <input id="nav-toggle" type="checkbox">
+                <label for="nav-toggle" class="ham">
+                    <div class="ham-origin">
+                        <div class="ham-bar ham-bar--top"></div>
+                        <div class="ham-bar ham-bar--middle"></div>
+                        <div class="ham-bar ham-bar--bottom"></div>
+                    </div>
+                </label>
+                
                 <div class="nav_top_title_all">
                     <div class="nav_top_title "><span class="nav_top_title1">地震災害</span></div>
                     <div class="nav_top_title"><span class="">耐震遊戲</span></div>
@@ -31,7 +35,6 @@
                     <div class="nav_top_title"><span class="">申請補助</span></div>
                     <div class="nav_top_title"><span class="">常見問題</span></div>
                 </div>
-
             </div>
         </nav>
 
@@ -109,7 +112,7 @@
                                         依照建築物的現況，耐震階段性補強設計有多種選擇，為鼓勵民眾進行耐震補強，內政部營建署特別訂定「建築物結構快篩及階段性補強經費補助執行作業要點」，將建築物耐震補強概分A、B兩種方案，並依據補強施作面積大小酌予補助。
                                     </div>
                                 </div>
-                                <div class="section3_box_all">
+                                <div class="">
                                     <div class="section3_box_all">
                                         <div class="section3_box1">
                                             <div class="section_box_title_bg">
@@ -141,7 +144,7 @@
                                     <div class="">
                                         <h1>補強方案說明</h1>
                                     </div>
-                                    <div>
+                                    <div class="section3_case_all">
                                         <div class="section3_case">
                                             <div class="section3_caseA">
                                                 <div class="section3_case_img"><img src="./img/pic-8.png" alt=""></div>
@@ -513,7 +516,7 @@
                                     </div>
                                     <div class="collapse">
                                         <div class="title-box">
-                                            <div class="title">辦理私有建築耐震階段性補強之施工廠商資格為何</div>
+                                            <div class="title">辦理私有建築耐震階段性補強之施工廠商資格為何？</div>
                                             <div class="icons">
                                                 <span class="collapse_icons"><img src="./img/arrow.svg" alt=""></span>
                                             </div>
@@ -738,10 +741,10 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer_content">
             <div class="footer_all">
-                <div>
+                <div class="footer_all_content">
                     <div class="footer_link">
                         <span class="footer_link_span">補強專業相關連結</span>
                         <div><a href="http://www.ncree.org/">國家地震工程研究中心</a></div>
@@ -750,16 +753,17 @@
                     </div>
                     <div class="footer_link">
                         <span class="footer_link_span">專業技師公會</span>
-                        <div><a href="http://www.ncsea.org.tw/">中華民國結構工程技師公會全國聯合會全聯會</a></div>
+                        <div class="footer_link_span_1"><a href="http://www.ncsea.org.tw/">中華民國結構工程技師公會全國聯合會全聯會</a>
+                        </div>
                         <div><a href="http://www.cupcea.org.tw/">中華民國土木技師公會全國聯合會</a></div>
                         <div><a href="http://www.naa.org.tw/">中華民國全國建築師公會</a></div>
                     </div>
                 </div>
                 <div class="footer_log_all">
-                    <div class="footer_log"><img src="./img/logo-3.svg" alt=""></div>
+                    <div class="footer_log footer_log_1"><img src="./img/logo-3.svg" alt=""></div>
                     <div class="footer_log"><img src="./img/logo-2.svg" alt=""></div>
                 </div>
-                <div>
+                <div class="footer_contact_all">
                     <div class="footer_contact_txt">
                         <span class="footer_link_span">聯絡我們</span>
                         <div>連絡電話：(02)6630-0237</div>
@@ -777,7 +781,7 @@
                 <div class="footer_c_txt">Copyright © 財團法人國家實驗研究院國家地震工程研究中心 All rights reserved</div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <script src="./js/sec5.js"></script>
     <script src="./js/sec6.js"></script>
     <script src="./js/header.js"></script>

@@ -58,3 +58,26 @@
     left: 400px;
     top: -18px;
 }
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .footer_log {
+    width: 90%;
+    margin-top: 67px;
+    padding-left: 25px;
+  }
+  .footer_log_1 img {
+    width: 100%;
+  }
+  .footer_all_content{
+    margin-left: 30px;
+    width: 30%;
+  }
+  .footer_link_span_1{
+  }
+  .footer_contact_all{
+    margin-right: 30px;
+  }
+  .footer_c_txt{
+    left: 330px;
+  }
+}
