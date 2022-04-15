@@ -70,9 +70,9 @@ a {
   padding-right: 42px;
   cursor: pointer;
 }
-.nav_top_title1 {
+/* .nav_top_title1 {
   border-bottom: 3px solid rgba(255, 208, 43, 1);
-}
+} */
 .nav_top_title span:hover {
   border-bottom: 3px solid rgba(255, 208, 43, 1);
 }
