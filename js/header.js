@@ -8,8 +8,8 @@ console.log(checked_btn);
 nav_title.forEach(function (element, index) {
     element.addEventListener('click', function () {
         console.log(nav_title)
-        document.getElementsByTagName('html')[0].scrollTo({
-            top: nav_title_h2[index].offsetTop -50,
+        window.scrollTo({
+            top: nav_title_h2[index].offsetTop -55,
             behavior: "smooth",
         });
         checked_btn.checked = false;
@@ -17,13 +17,22 @@ nav_title.forEach(function (element, index) {
 });
 nav_right_title.forEach(function (element, index) {
     element.addEventListener('click', function () {
-        document.getElementsByTagName('html')[0].scrollTo({
-            top: nav_title_h2[index].offsetTop -50,
+        window.scrollTo({
+            top: nav_title_h2[index].offsetTop -55,
             behavior: "smooth",
 
         })
     })
 });
+// nav_right_title.forEach(function (element, index) {
+//     element.addEventListener('click', function () {
+//         document.getElementsByTagName('html')[0].scrollTo({
+//             top: nav_title_h2[index].offsetTop -55,
+//             behavior: "smooth",
+
+//         })
+//     })
+// });
 // nav_title.forEach(function (element, index1) {
 //     element.addEventListener('click', function () {
 //         checked_btn.checked = false;

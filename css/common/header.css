@@ -101,7 +101,7 @@ a {
 .nav_right_bg_1 {
   position: relative;
   width: 50px;
-  z-index: 20;
+  z-index: 22;
   display: none;
 }
 .nav_right_bg {
