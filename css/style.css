@@ -417,7 +417,7 @@
   align-items: center;
   padding: 20px 0px 20px 84px;
   cursor: pointer;
-  z-index: 1;
+  z-index: 10;
   border-radius: 50px;
   background-color: #fffae2;
 }
@@ -521,6 +521,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 21;
 }
 #fade {
   display: none;
@@ -531,7 +532,6 @@
   height: 100%;
   /* overflow: hidden; */
   background-color: black;
-  z-index: 10;
   -moz-opacity: 0.8;
   opacity: 0.5;
   filter: alpha(opacity=80);
@@ -770,34 +770,34 @@
   .section0_text {
     font-weight: bold;
     font-style: normal;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 93px;
     position: absolute;
-    top: -38px;
-    left: 10px;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-      1px 1px 0 #fff;
+    top: -30px;
+    left: 28px;
+    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+      2px 2px 0 #fff;
   }
   .section0_text_bg_1 {
     background: #fffae2;
-    width: 180px;
-    height: 30px;
+    width: 270px;
+    height: 40px;
   }
   .section0_text_bg_2 {
     background: #fffae2;
-    width: 280px;
-    height: 30px;
+    width: 380px;
+    height: 40px;
   }
   .section0_content_1 {
     position: absolute;
-    width: 280px;
+    width: 380px;
     height: 278px;
     right: 0px;
     top: 150px;
   }
   .section0_content_2 {
     position: absolute;
-    width: 280px;
+    width: 380px;
     height: 278px;
     right: 0px;
     top: 215px;
@@ -1020,37 +1020,37 @@
   .section0_text {
     font-weight: bold;
     font-style: normal;
-    font-size: 18px;
+    font-size: 40px;
     line-height: 93px;
     position: absolute;
-    top: -42px;
-    left: 10px;
-    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-      1px 1px 0 #fff;
+    top: -30px;
+    left: 28px;
+    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
+      2px 2px 0 #fff;
   }
   .section0_text_bg_1 {
     background: #fffae2;
-    width: 130px;
-    height: 18px;
+    width: 270px;
+    height: 40px;
   }
   .section0_text_bg_2 {
     background: #fffae2;
-    width: 170px;
-    height: 18px;
+    width: 380px;
+    height: 40px;
   }
   .section0_content_1 {
     position: absolute;
-    width: 170px;
+    width: 380px;
     height: 278px;
     right: 0px;
-    top: 68px;
+    top: 150px;
   }
   .section0_content_2 {
     position: absolute;
-    width: 170px;
+    width: 380px;
     height: 278px;
     right: 0px;
-    top: 98px;
+    top: 215px;
   }
   .section1_pic_all {
     margin-top: 0;

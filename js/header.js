@@ -7,7 +7,8 @@ console.log(checked_btn);
 
 nav_title.forEach(function (element, index) {
     element.addEventListener('click', function () {
-        window.scrollTo({
+        console.log(nav_title)
+        document.getElementsByTagName('html')[0].scrollTo({
             top: nav_title_h2[index].offsetTop -50,
             behavior: "smooth",
         });
@@ -16,7 +17,7 @@ nav_title.forEach(function (element, index) {
 });
 nav_right_title.forEach(function (element, index) {
     element.addEventListener('click', function () {
-        window.scrollTo({
+        document.getElementsByTagName('html')[0].scrollTo({
             top: nav_title_h2[index].offsetTop -50,
             behavior: "smooth",
 

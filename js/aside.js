@@ -6,7 +6,7 @@ const svg = document.querySelectorAll('.svg_fill');
 document.addEventListener('scroll', function () {
     // console.log(document.documentElement.scrollTop);  // 距離top的高度
     product.forEach(function (el, index) {
-        console.log(el.offsetTop);  // section 距離top的高度
+        // console.log(el.offsetTop);  // section 距離top的高度
         if (Math.abs(el.offsetTop - document.documentElement.scrollTop) < 60 ) {
             aside.forEach(function (el, index) {
                 el.style = "border: 0px solid black";
