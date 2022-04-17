@@ -214,7 +214,7 @@
 }
 @media (max-width: 575.98px) {
   .footer {
-    height: 360px;
+    height: 370px;
     font-size: 10px;
     z-index: 22;
   }
@@ -231,14 +231,14 @@
     margin: 0;
   }
   .footer_log {
-    width: 42%;
+    width: 35%;
     height: 25px;
     margin-top: 0;
     padding-top: 10px;
   }
   .footer_log img{
     width: 100%;
-
+    min-height: 25px;
   }
   .footer_log_1 {
     width: 50%;
@@ -275,12 +275,17 @@
   .footer_c {
     position: absolute;
     left: 15px;
-    top: 320px;
-    width: 300px;
+    bottom: 30px;
+    width: 90%;
   }
   .footer_c_txt {
     position: absolute;
     left: 0px;
     top: 0px;
+  }
+}
+@media (max-width: 495.98px) {
+  .footer_c {
+    bottom: 40px;
   }
 }
