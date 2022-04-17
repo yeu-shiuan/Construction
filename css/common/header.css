@@ -385,7 +385,8 @@ div.flex_div {
   /* 漢堡選單樣式 */
   .ham {
     width: 35px;
-    height: 30.5px;
+    height: 42px;
+    line-height: 42px;
     /* border-radius: 5px;
     background: rgba(0, 0, 0, 0.3); */
     display: block;
@@ -395,7 +396,7 @@ div.flex_div {
   }
   .ham-origin {
     position: absolute;
-    top: 66%;
+    top: 50%;
     left: 10%;
   }
   .ham-bar {
