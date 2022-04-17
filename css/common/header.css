@@ -311,6 +311,12 @@ div.flex_div {
     color: #016437;
     border: 0px;
   }
+  .BG_color{
+    background-color: #ffd02b;
+  }
+  .word_color{
+    color: #016437;
+  }
   .nav_top_title_end {
     border-radius: 0px 0px 10px 10px;
     border-bottom: 0px;
@@ -541,5 +547,11 @@ div.flex_div {
   .svg {
     width: 35px;
     filter: drop-shadow(45px 0 #016437);
+  }
+  .BG_color{
+    background-color: #ffd02b;
+  }
+  .word_color{
+    color: #016437;
   }
 }

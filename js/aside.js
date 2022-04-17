@@ -2,6 +2,8 @@ const product = document.querySelectorAll('.section_all');
 const aside = document.querySelectorAll('.nav_right_bg_1');
 const nav_right_img = document.querySelectorAll('.nav_right_img');
 const svg = document.querySelectorAll('.svg_fill');
+const nav_top_title = document.querySelectorAll(".nav_top_title");
+const nav_top_title_txt = document.querySelectorAll(".nav_top_title_txt");
 
 document.addEventListener('scroll', function () {
     // console.log(document.documentElement.scrollTop);  // 距離top的高度
@@ -22,6 +24,14 @@ document.addEventListener('scroll', function () {
             });
             nav_right_img[index].style = "background-color: #ffd02b";
             nav_right_img[index + 5].style = "background-color: #ffd02b";
+            nav_top_title.forEach(function (el, index) {
+                el.classList.remove("BG_color");
+            });
+            nav_top_title[index].classList.add("BG_color");
+            nav_top_title_txt.forEach(function (el, index) {
+                el.classList.remove("word_color");
+            });
+            nav_top_title_txt[index].classList.add("word_color");
         };
     });
 });
