@@ -417,7 +417,7 @@
   align-items: center;
   padding: 20px 0px 20px 84px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 1;
   border-radius: 50px;
   background-color: #fffae2;
 }
@@ -770,34 +770,34 @@
   .section0_text {
     font-weight: bold;
     font-style: normal;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 93px;
     position: absolute;
-    top: -30px;
-    left: 28px;
-    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
-      2px 2px 0 #fff;
+    top: -38px;
+    left: 10px;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+      1px 1px 0 #fff;
   }
   .section0_text_bg_1 {
     background: #fffae2;
-    width: 270px;
-    height: 40px;
+    width: 180px;
+    height: 30px;
   }
   .section0_text_bg_2 {
     background: #fffae2;
-    width: 380px;
-    height: 40px;
+    width: 280px;
+    height: 30px;
   }
   .section0_content_1 {
     position: absolute;
-    width: 380px;
+    width: 280px;
     height: 278px;
     right: 0px;
     top: 150px;
   }
   .section0_content_2 {
     position: absolute;
-    width: 380px;
+    width: 280px;
     height: 278px;
     right: 0px;
     top: 215px;
@@ -1020,37 +1020,37 @@
   .section0_text {
     font-weight: bold;
     font-style: normal;
-    font-size: 40px;
+    font-size: 18px;
     line-height: 93px;
     position: absolute;
-    top: -30px;
-    left: 28px;
-    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff,
-      2px 2px 0 #fff;
+    top: -42px;
+    left: 10px;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+      1px 1px 0 #fff;
   }
   .section0_text_bg_1 {
     background: #fffae2;
-    width: 270px;
-    height: 40px;
+    width: 130px;
+    height: 18px;
   }
   .section0_text_bg_2 {
     background: #fffae2;
-    width: 380px;
-    height: 40px;
+    width: 170px;
+    height: 18px;
   }
   .section0_content_1 {
     position: absolute;
-    width: 380px;
+    width: 170px;
     height: 278px;
     right: 0px;
-    top: 150px;
+    top: 68px;
   }
   .section0_content_2 {
     position: absolute;
-    width: 380px;
+    width: 170px;
     height: 278px;
     right: 0px;
-    top: 215px;
+    top: 98px;
   }
   .section1_pic_all {
     margin-top: 0;

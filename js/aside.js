@@ -16,10 +16,12 @@ document.addEventListener('scroll', function () {
                 el.style = "";
             });
             svg[index].style = "fill: #016437";
+            svg[index + 5].style = "fill: #016437";
             nav_right_img.forEach(function (el, index) {
                 el.style = "";
             });
             nav_right_img[index].style = "background-color: #ffd02b";
+            nav_right_img[index + 5].style = "background-color: #ffd02b";
         };
     });
 });
