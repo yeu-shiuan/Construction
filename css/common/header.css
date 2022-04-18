@@ -406,7 +406,7 @@ div.flex_div {
   }
   .ham-bar {
     height: 5px;
-    width: 40px;
+    width: 35px;
     position: absolute;
     background: #4f4f4f;
     display: flex;
@@ -418,10 +418,10 @@ div.flex_div {
     border-radius: 30px;
   }
   .ham-bar--top {
-    transform: translateY(-14px);
+    transform: translateY(-12px);
   }
   .ham-bar--bottom {
-    transform: translateY(14px);
+    transform: translateY(12px);
   }
   #nav-toggle:checked ~ .ham .ham-bar--middle {
     opacity: 0;
