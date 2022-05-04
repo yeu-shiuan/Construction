@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.2/lottie.min.js"
         integrity="sha512-R47oG09eydaf225nXyDdSWJ8frKwxkC7QIHXdPpbUx9KaAiC6akjpWxTBw1hb7whk7P2sJNuRhS2ljSBegnIPA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -162,18 +163,78 @@
                                 <div class="section2_game_all">
                                     <div class="section2_bg">
                                         <div class="section2_game_contect">
-                                            <div class="section2_game_bg">
-                                                <div class="section2_game_balck_bg">
-                                                    <div class="section2_game_brown_border">
-                                                        <div class="section2_game_yellow_border">
+                                            <div class="section2_game_bg" id="gamebg">
+                                                <div class="section2_game_bg_start">
+                                                    <div class="section2_game_balck_bg" id="blackbg">
+                                                        <div class="section2_game_yellow_border" id="gamerules">
                                                             <div class="section2_game_txt">
                                                                 <div class="section2_game_pop_title">遊戲規則</div>
                                                                 <div class="section2_game_pop_contect">
                                                                     於指定時間內，拖移題目物件至房屋正確位置，獲得新屋與建設小知識！</div>
                                                             </div>
-                                                            <div class="section2_game_btn_yellow">
+                                                            <div class="section2_game_btn_yellow" id="gamebtn">
                                                                 <img src="./img/game/start_btn.png" alt="">
                                                             </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- 遊戲成功 -->
+                                                    <div class="success" id="success"></div>
+                                                    <!-- 觀看影片 -->
+                                                    <div class="section2_game_yellow_border2 animate__animated animate__fadeInUp"
+                                                        id="vido">
+                                                        <div class="section2_game_pop_title">觀看影片即可參與抽獎!</div>
+                                                        <div id="player" class="video"></div>
+                                                        <div type="button" class="section2_game_btn_yellow2"
+                                                            id="fillBtn" disabled>
+                                                            <img src="./img/game/fill_btn.png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <!-- 填寫表單 -->
+                                                    <div class="section2_game_yellow_border2 animate__animated animate__fadeInUp"
+                                                        id="form">
+                                                        <div class="section2_game_pop_title">填寫資料抽大獎</div>
+                                                        <form action="" id="userInfoForm">
+                                                            <div class="formtext">姓 名:
+                                                                <input type="text" class="forminput" required>
+                                                            </div>
+                                                            <div class="formtext">手 機:
+                                                                <input type="text" class="forminput" required>
+                                                            </div>
+                                                            <div class="formtext">地 址:
+                                                                <input type="text" class="forminput" required>
+                                                            </div>
+                                                            <input class="form_btn" type="submit" value="送出"
+                                                                id="formBtn" />
+                                                        </form>
+                                                    </div>
+                                                    <!-- 送出表單 -->
+                                                    <div class="section2_game_yellow_border3 animate__animated animate__fadeInUp"
+                                                        id="formSend">
+                                                        <div class="section2_game_pop_title">填單完成</div>
+                                                        <div class="section2_game_pop_contect">
+                                                            收到您的聯絡資訊囉！中獎後會再電話通知，亦可在民國111年xx月xx日後於本網站「中獎名單」的頁面中查詢。</div>
+                                                        <input class="form_send_btn" type="submit" value="確定"
+                                                            id="formSendBtn" />
+                                                    </div>
+
+                                                    <div class="section2_game_building" id="building">
+                                                        <div class="space_img spaceimg1" id="space1" data-answer="1">
+                                                        </div>
+                                                        <div class="space_img spaceimg2" id="space2" data-answer="2">
+                                                        </div>
+                                                    </div>
+                                                    <div class="timer_content" id="timer">
+                                                        <div class="timer_text">
+                                                            <span id="timer_number">30</span>s
+                                                        </div>
+                                                    </div>
+                                                    <div class="section2_game_question" id="questionContainer">
+                                                        <div class="question_text" id="titleContainer">Q1.補強？</div>
+                                                        <div class="question_text_hint" id="hintContainer">穩定度！</div>
+                                                        <div class="question_img" id="questionDragableContainer"
+                                                            draggable="true">
+                                                            <img class="img_fit" id="questionImgContainer"
+                                                                src="../img/game/window.png" alt="">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -900,6 +961,7 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="http://www.youtube.com/player_api"></script>
     <script>
         AOS.init();
     </script>
@@ -917,6 +979,7 @@
     <script src="./js/sec6.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/aside.js"></script>
+    <script src="./js/game.js"></script>
 </body>
 
 </html>

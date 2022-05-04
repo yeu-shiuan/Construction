@@ -152,6 +152,17 @@
   position: relative;
 }
 
+.section2_game_building {
+  margin: 0 25%;
+  margin-top: 10px;
+  width: 768px;
+  height: 843px;
+  background-image: url(../img/game/building.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  display: none;
+}
+
 .section2_game_balck_bg {
   background: rgba(0, 0, 0, 0.4);
   width: 768px;
@@ -177,9 +188,40 @@
   border: 5.325px solid #F5AC18;
   box-sizing: border-box;
   border-radius: 13.3125px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.section2_game_txt{
+
+.section2_game_yellow_border2 {
+  width: 580px;
+  height: 530px;
+  background: #FFFFFF;
+  border: 5.325px solid #F5AC18;
+  box-sizing: border-box;
+  border-radius: 13.3125px;
+  position: absolute;
+  top: 18%;
+  left: 11%;
+  transform: translate(-89%, -82%);
+  display: none;
 }
+
+.section2_game_yellow_border3 {
+  width: 580px;
+  height: 460px;
+  background: #FFFFFF;
+  border: 5.325px solid #F5AC18;
+  box-sizing: border-box;
+  border-radius: 13.3125px;
+  position: absolute;
+  top: 18%;
+  left: 11%;
+  transform: translate(-89%, -82%);
+  display: none;
+}
+
 .section2_game_pop_title {
   font-weight: 700;
   font-size: 40px;
@@ -197,14 +239,201 @@
   width: 413.58px;
   margin: 20px auto;
 }
-.section2_game_btn_yellow{
+
+.section2_game_btn_yellow {
   width: 287.55px;
   height: 85.2px;
-margin: 0 auto;
+  margin: 0 auto;
+  cursor: pointer;
 }
-.section2_game_btn_yellow img{
+
+.section2_game_btn_yellow2 {
+  width: 287.55px;
+  height: 85.2px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+.section2_game_btn_yellow img {
   width: 100%;
 }
+
+.timer_content {
+  width: 130px;
+  height: 86px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 5px solid #000000;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: none;
+}
+
+.timer_text {
+  color: #000000;
+  font-family: 'Microsoft JhengHei';
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timer_number {
+  font-size: 40px;
+}
+
+.section2_game_question {
+  width: 700px;
+  height: 268px;
+  background-color: #ffffff;
+  border: 6px solid #F5AC18;
+  border-radius: 15px;
+  margin: 0px auto;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: none;
+}
+
+.question_text {
+  color: #000000;
+  font-family: 'Microsoft JhengHei';
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.question_text_hint {
+  width: 100%;
+  font-family: 'Microsoft JhengHei';
+  font-size: 40px;
+  color: #DA5C4E;
+  font-weight: bold;
+  margin-top: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-35%, -0%);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.question_img {
+  overflow: hidden;
+  border-radius: 15px;
+  border: 6px solid #F5AC18;
+  position: absolute;
+  margin-top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  cursor: move;
+}
+
+.spaceimg1 {
+  width: 120px;
+  height: 120px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 6px solid #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 37%;
+  left: 22%;
+  transform: translate(-78%, -63%);
+}
+
+.spaceimg2 {
+  width: 120px;
+  height: 120px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 6px solid #ffffff;
+  border-radius: 10px;
+  position: absolute;
+  top: 54.6%;
+  left: 12.8%;
+  transform: translate(-87.2%, -44.4%);
+}
+
+.success {
+  width: 100%;
+  height: 160px;
+  background: url(../img/game/finish.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(0%, -50%);
+  display: none;
+}
+
+.video {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+
+.forminput {
+  width: 350px;
+  height: 40px;
+  border-bottom: 3px solid #000000;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  outline: none;
+  font-size: 32px;
+  font-style: normal;
+  margin-left: 20px;
+}
+
+.formtext {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-top: 30px;
+}
+
+.form_btn {
+  width: 230px;
+  height: 70px;
+  border: none;
+  border-radius: 50px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 36px;
+  text-align: center;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -98%);
+  cursor: pointer;
+}
+
+.form_send_btn {
+  width: 230px;
+  height: 70px;
+  border: none;
+  border-radius: 50px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 36px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translate(-50%, -98%);
+  cursor: pointer;
+}
+
 /* ============  section2  end ============ */
 /* ============  section3 ============ */
 .section3_box_all {
@@ -1681,4 +1910,25 @@ margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 20px;
   }
+}
+
+/* 拖曳 */
+/* .draggable {
+  width: 200px;
+  height: 30px;
+  background-color: #5856d6;
+  text-align: center;
+  line-height: 30px;
+} */
+
+.dragging {
+  transition: 0.01s;
+  transform: translateX(-9999px);
+}
+
+.img_fit {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
