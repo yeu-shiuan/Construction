@@ -4,13 +4,13 @@ const questions = [
     id: 1,
     title: "Q1. 柱子損害及破損，該如何補強？",
     hint: "增加防震柱補強建築穩定度！",
-    img: "../img/game/window.png",
+    img: "img/game/window.png",
   },
   {
     id: 2,
     title: "Q2. 牆面毀損，該如何修復？",
     hint: "使用剪力牆，增加牆面品質",
-    img: "../img/game/door.png",
+    img: "img/game/door.png",
   },
 ];
 
